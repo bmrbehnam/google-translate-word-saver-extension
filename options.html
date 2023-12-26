@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Translate Plus Options</title>
+  <style>
+    body {
+      font-family: 'tahoma','Arial', sans-serif;
+      margin: 20px;
+      background: #bfbfbf;
+      width: 300px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    li button {
+        border: none;
+        background: none;
+        color: #f30000;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin-right: 10px;
+      cursor: pointer;
+      border: solid 1px #ccc;
+    }
+
+    #deleteAllBtn {
+      background-color: #dc3545;
+      border: solid 1px #ccc;
+      color: #fff;
+    }
+
+    #savedWordsList{
+        font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Saved Words</h2>
+  <ul id="savedWordsList"></ul>
+  <hr>
+  <button id="exportBtn">Export Saved Words</button>
+  <button id="deleteAllBtn">Delete All Words</button>
+  <script src="js/options.js"></script>
+</body>
+</html>
