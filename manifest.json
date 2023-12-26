@@ -1,0 +1,32 @@
+  {
+    "manifest_version": 3,
+    "name": "Google Translate Plus",
+    "version": "1.0",
+    "description": "Enhance Google Translate with word saving",
+    "permissions": [
+      "storage",
+      "contextMenus"
+    ],
+    "action": {
+      "default_icon": "icon.png",
+      "default_title": "Google Translate Plus",
+      "default_popup": "options.html?page=translate"
+    },
+    "icons": {
+        "128": "icon.png"
+      },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "run_at": "document_end",
+        "js": ["js/content.js"]
+      }
+    ],
+    "background": {
+        "service_worker": "js/background.js"
+      },
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": true
+      }
+  }
